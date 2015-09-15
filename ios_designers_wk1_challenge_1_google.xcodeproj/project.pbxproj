@@ -11,8 +11,10 @@
 		BFD2AA561BA882150091FAC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2AA551BA882150091FAC6 /* ViewController.swift */; };
 		BFD2AA591BA882150091FAC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD2AA571BA882150091FAC6 /* Main.storyboard */; };
 		BFD2AA5B1BA882150091FAC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD2AA5A1BA882150091FAC6 /* Images.xcassets */; };
-		BFD2AA5E1BA882150091FAC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2AA5C1BA882150091FAC6 /* LaunchScreen.xib */; };
 		BFD2AA6A1BA882150091FAC6 /* ios_designers_wk1_challenge_1_googleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2AA691BA882150091FAC6 /* ios_designers_wk1_challenge_1_googleTests.swift */; };
+		BFD2AA741BA89FA50091FAC6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2AA731BA89FA50091FAC6 /* SettingsViewController.swift */; };
+		BFD2AA771BA8A39E0091FAC6 /* SearchActiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2AA761BA8A39E0091FAC6 /* SearchActiveViewController.swift */; };
+		BFD2AA791BA8A3DA0091FAC6 /* SearchAutoCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2AA781BA8A3DA0091FAC6 /* SearchAutoCompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +34,12 @@
 		BFD2AA551BA882150091FAC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFD2AA581BA882150091FAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFD2AA5A1BA882150091FAC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BFD2AA5D1BA882150091FAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BFD2AA631BA882150091FAC6 /* ios_designers_wk1_challenge_1_googleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_designers_wk1_challenge_1_googleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD2AA681BA882150091FAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD2AA691BA882150091FAC6 /* ios_designers_wk1_challenge_1_googleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_designers_wk1_challenge_1_googleTests.swift; sourceTree = "<group>"; };
+		BFD2AA731BA89FA50091FAC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BFD2AA761BA8A39E0091FAC6 /* SearchActiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchActiveViewController.swift; sourceTree = "<group>"; };
+		BFD2AA781BA8A3DA0091FAC6 /* SearchAutoCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAutoCompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,11 @@
 		BFD2AA501BA882150091FAC6 /* ios_designers_wk1_challenge_1_google */ = {
 			isa = PBXGroup;
 			children = (
+				BFD2AA751BA89FB30091FAC6 /* ViewControllers */,
 				BFD2AA531BA882150091FAC6 /* AppDelegate.swift */,
 				BFD2AA551BA882150091FAC6 /* ViewController.swift */,
 				BFD2AA571BA882150091FAC6 /* Main.storyboard */,
 				BFD2AA5A1BA882150091FAC6 /* Images.xcassets */,
-				BFD2AA5C1BA882150091FAC6 /* LaunchScreen.xib */,
 				BFD2AA511BA882150091FAC6 /* Supporting Files */,
 			);
 			path = ios_designers_wk1_challenge_1_google;
@@ -110,6 +114,16 @@
 				BFD2AA681BA882150091FAC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFD2AA751BA89FB30091FAC6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFD2AA731BA89FA50091FAC6 /* SettingsViewController.swift */,
+				BFD2AA761BA8A39E0091FAC6 /* SearchActiveViewController.swift */,
+				BFD2AA781BA8A3DA0091FAC6 /* SearchAutoCompleteViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD2AA591BA882150091FAC6 /* Main.storyboard in Resources */,
-				BFD2AA5E1BA882150091FAC6 /* LaunchScreen.xib in Resources */,
 				BFD2AA5B1BA882150091FAC6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD2AA771BA8A39E0091FAC6 /* SearchActiveViewController.swift in Sources */,
 				BFD2AA561BA882150091FAC6 /* ViewController.swift in Sources */,
 				BFD2AA541BA882150091FAC6 /* AppDelegate.swift in Sources */,
+				BFD2AA741BA89FA50091FAC6 /* SettingsViewController.swift in Sources */,
+				BFD2AA791BA8A3DA0091FAC6 /* SearchAutoCompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +258,6 @@
 				BFD2AA581BA882150091FAC6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BFD2AA5C1BA882150091FAC6 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFD2AA5D1BA882150091FAC6 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ios_designers_wk1_challenge_1_google/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ios_designers_wk1_challenge_1_google/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
